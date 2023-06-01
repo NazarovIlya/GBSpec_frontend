@@ -1,0 +1,60 @@
+body{
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.image_left{
+  border-radius: 10px;
+  float: left; 
+  margin-right: 0.5em;
+}
+
+.nav_link{
+  color: cornflowerblue;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.heading{
+  color: #222222;  
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.title{
+  color: coral;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 80px;
+}
+
+.paragraph{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7D7987;
+}
+
+.input__field{
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.order__btn{
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
