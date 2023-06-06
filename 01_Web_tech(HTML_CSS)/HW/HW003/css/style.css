@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.top{
+}
+
+.header{
+  margin-top: 40px;
+  margin-bottom: 84px;
+  margin-left: 19%;
+  margin-right: 19%;
+  display: flex;
+  justify-content:space-between
+}
+
+.menu-link{
+font-family: 'Gilroy-SemiBold';
+font-size: 14px;
+line-height: 16px;
+color: #000000;
+margin-top: 11px;
+margin-bottom: 12px;
+}
+
+.menu-link:hover{
+  color: #F25822;
+}
+
+.top-content{
+  margin-left: 19%;
+  margin-right: 19%;
+  display: flex;
+  justify-content:space-between;
+}
+
+.content-info{
+  margin-right: 41px;
+}
+
+.title{
+  margin-bottom: 17px;
+}
+
+.text{
+  margin-bottom: 37px;
+}
+
+.buttons{
+  margin-bottom: 162px;
+}
+
+.btn-start {
+  background: #F25822;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 15px 35px 15px 35px;
+  color: #fff;
+  cursor:pointer;
+}
+
+.btn-start:hover {
+  background: #ffffff;
+  color: #F25822;
+  border: 1px solid #F25822;
+}
+
+.btn-watch {
+  font-family: 'Gilroy-Bold';
+  font-size: 15px;
+  line-height: 18px;
+  color: #AAAAAA;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+.btn-watch:hover {
+  color: #F25822;
+}
+
+.top-logos{
+  margin-left: 16%;
+  margin-right: 16%;
+  padding-top: 97px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content:space-between;
+  background: #FFFFFF;
+}
