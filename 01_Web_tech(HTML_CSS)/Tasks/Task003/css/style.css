@@ -3,7 +3,7 @@
   padding: 0;
 }
 .top{
-  
+  padding-bottom: 99px;
 }
 
 .header{
@@ -17,6 +17,7 @@
 
 .top-content{
   margin-top: 160px;
+  margin-bottom: 197px;
 }
 
 .top-info{
@@ -24,12 +25,13 @@
 }
 
 .subtitle{
+  margin-bottom: 10px;
 
   text-transform: uppercase;color: #3A68B8;
 }
 
 .title{
-
+  margin-bottom: 40px;
 }
 
 .text{
@@ -37,7 +39,7 @@
 }
 
 .top-buttons{
-
+  margin-top: 50px;
 }
 
 .top-logos{
