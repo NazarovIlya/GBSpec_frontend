@@ -4,6 +4,7 @@
 }
 
 .top{
+  width: 100vw;
 }
 
 .header{
@@ -12,7 +13,7 @@
   margin-left: 19%;
   margin-right: 19%;
   display: flex;
-  justify-content:space-between
+  justify-content:space-between;
 }
 
 .menu-link{
