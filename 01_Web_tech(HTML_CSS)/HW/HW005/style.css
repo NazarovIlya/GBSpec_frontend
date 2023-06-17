@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Lato', serif, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1600px;
+  min-width: 375px;
+  background: #FFFFFF;
+}
+
+.header{
+  background: #222222;
+  margin: 0 auto;
+  padding-left: 14.4%;
+  padding-right: 15%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  margin-right: 40px;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+}
+
+.header-right a{
+  margin: 0px 20px;
+}
+
+.header-right img{
+  height: 23px;
+}
+
+.section-presenter{
+
+}
+
+.presenter{
+
+}
+
+.presenter-photo{
+
+}
+
+.presenter-header{
+
+}
+
+.section-offer{
+
+}
+
+.section-products{
+
+}
