@@ -51,19 +51,56 @@ a{
 }
 
 .section-presenter{
-
+  background: #F1E4E6;
+  margin-bottom: 65px;
 }
 
 .presenter{
-
+  min-width: 1600px;
+  min-height: 764px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .presenter-photo{
+  height: inherit;
+  width: 48%;
+}
 
+.presenter-photo img{
+  height: inherit;
 }
 
 .presenter-header{
+  border-left: 12px solid #F16D7F ;
+  width: 48%;
+  padding: 1%;
+}
 
+.presenter-header h1{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  color: #222222;
+  
+}
+
+.presenter-header h2{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.presenter-header span{
+  color: #F16D7F;
 }
 
 .section-offer{
