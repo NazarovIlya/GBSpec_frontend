@@ -1,0 +1,43 @@
+.nav-link {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  text-align: center;
+}
+.heading-inline-text {
+  color: #8A2BE2;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 16px;
+}
+.nav-link {
+  text-decoration: none;
+}
+
+.content {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content-item {
+  box-sizing: border-box;
+  width: 288px;
+  height: 200px;
+  border: 1px solid #000;
+}/*# sourceMappingURL=style.css.map */

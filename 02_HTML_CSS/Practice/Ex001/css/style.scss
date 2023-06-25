@@ -1,0 +1,52 @@
+@import 'vars';
+@import 'mixins';
+@import 'extends';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+
+}
+
+.heading{
+  text-align:  center;
+  // цвет выделения текста
+&-inline-text{
+  color: $colorInlineText;
+    }
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  margin-top: $navGap;
+  gap: $navGap;
+
+  &-link{
+    @extend %fontSite;
+    text-decoration: none;
+ 
+  }
+}
+
+.content{
+  width: $widthSite;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $navGap;
+  @include flexMix();
+  
+  &-item{
+    box-sizing: border-box;
+    width: ($widthSite - 3*$navGap) / 4;
+    height: 200px;
+    border: $borber;
+  }
+}
+
+
+
+
