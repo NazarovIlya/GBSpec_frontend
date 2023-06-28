@@ -471,6 +471,7 @@ margin-bottom: 20px;
   background-color: #F16D7F;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+  border: none;
   color: #FFF;
   text-align: center;
   font-family: 'Lato', serif, sans-serif;
@@ -518,11 +519,15 @@ margin-bottom: 20px;
 
 .footer-copyright_block-social a:hover{
   background-color: #F16D7F;
-  color: #FFF;
+  opacity: 1;
+  transition: all .3s ease;
 }
 
-.footer-copyright_block-social img{
-  height: 16px;
+.link-facebook:hover path, 
+.link-instagram:hover path, 
+.link-pinterest:hover path, 
+.link-twitter:hover path{
+  fill: #FFF;
 }
 
 @media screen and (max-width: 768px){
