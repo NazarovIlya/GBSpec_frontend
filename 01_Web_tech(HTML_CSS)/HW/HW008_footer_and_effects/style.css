@@ -694,6 +694,11 @@ margin-bottom: 20px;
       display: none;
     }
 
+    .burger-menu-block{
+      width: 100vw;
+      box-sizing: border-box;
+    }
+
     .presenter{
       height: 363px;
       align-items: center;
