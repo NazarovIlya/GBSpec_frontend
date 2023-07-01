@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.details {
+  &-summary {
+    margin-top: 100px;
+    margin-left: 100px;
+    display: block;
+    color: tomato;
+    padding-left: 20px;
+  }
+
+  &-summary::before {
+    content: "\2192";
+    padding-right: 20px;
+  }
+
+  &[open] > .details-summary::before {
+    content: "\2193";
+  }
+
+  &[open] > .details-text {
+    max-width: 500px;
+    margin-left: 100px;
+  }
+}

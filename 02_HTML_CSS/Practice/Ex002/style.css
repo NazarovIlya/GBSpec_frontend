@@ -1,0 +1,24 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.details-summary {
+  margin-top: 100px;
+  margin-left: 100px;
+  display: block;
+  color: tomato;
+  padding-left: 20px;
+}
+.details-summary::before {
+  content: "→";
+  padding-right: 20px;
+}
+.details[open] > .details-summary::before {
+  content: "↓";
+}
+.details[open] > .details-text {
+  max-width: 500px;
+  margin-left: 100px;
+}/*# sourceMappingURL=style.css.map */
