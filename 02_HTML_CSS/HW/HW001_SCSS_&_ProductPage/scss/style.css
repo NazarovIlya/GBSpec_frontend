@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.footer-copyright_block-social a, .footer-copyright_block, .footer-subscribe-info, .footer-subscribe-subscribe_block, .offer-item, .sort, .product-arrow_left svg:hover path, .product-arrow_right svg:hover path, .product-arrow_left, .product-arrow_right, .product, .presenter_head {
+.footer-copyright_block-social a, .footer-copyright_block, .footer-subscribe-info, .footer-subscribe-subscribe_block, .offer-item, .sort, .product_box-card-sort_box-to_buy button, .product_box-card-sort_box-to_buy, .product_box-card-sort_box, .product-arrow_left svg:hover path, .product-arrow_right svg:hover path, .product-arrow_left, .product-arrow_right, .product, .presenter_head {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,6 +269,36 @@ a {
   width: 56%;
   height: 1px;
   background-color: #EAEAEA;
+}
+.product_box-card-sort_box {
+  flex-direction: column;
+  padding: 65px 0;
+  gap: 65px;
+  position: relative;
+}
+.product_box-card-sort_box-to_buy {
+  width: 212px;
+  height: 48px;
+}
+.product_box-card-sort_box-to_buy button {
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  background: #FFF;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  border: 1px solid #FF6A6A;
+}
+.product_box-card-sort_box-to_buy button:hover {
+  background: #F1E4E6;
+}
+.product_box-card-sort_box-to_buy p {
+  color: #F26376;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .sort summary {

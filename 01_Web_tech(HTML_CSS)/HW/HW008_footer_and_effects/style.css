@@ -21,7 +21,6 @@ a{
   min-width: 375px;
   background: #FFFFFF;
   position: relative;
-
 }
 
 .header{
@@ -538,7 +537,7 @@ margin-bottom: 20px;
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
-  font-weight: 400;
+  font-weight: 400px;
 }
 
 .subscribe-form input:focus{
@@ -648,6 +647,7 @@ margin-bottom: 20px;
   .featured-item{
     width: 48%;
   }
+  
   .footer-featers{
     height: auto;
     flex-direction: column;
