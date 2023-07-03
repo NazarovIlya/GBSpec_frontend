@@ -222,15 +222,16 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1373px;
+  height: 601px;
+  padding-top: 128px;
 }
 .product_box-card {
   width: 71%;
-  height: 601px;
   background-color: #FFF;
   position: absolute;
   top: -50px;
   flex-direction: column;
+  box-shadow: 0 0 1rem #EAEAEA;
 }
 .product_box-card-title {
   color: #F16D7F;

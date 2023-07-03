@@ -246,17 +246,18 @@ a{
   flex-direction: column;
   align-items: center;
   // z-index: $z-indexHeader;
-  height: 1373px;
+  height: 601px;
+  padding-top: 128px;
 
   &-card{
     width: 71%;
-    height: 601px;
     background-color: #FFF;
     // z-index: $z-indexHeader + 1;
     position: absolute;
     top: -50px;
     @extend %flexItemsCenter;
     flex-direction: column;
+    box-shadow: 0 0 1rem $colorProductLine;
 
     &-title{
       color: $colorSelectedPink;
