@@ -212,7 +212,24 @@ a{
   }
 
   &-breadcrumbs{
+    font-size: 14px;
+    line-height: 17px;
 
+    &-unit_link{
+      color: $colorBreadcrumbsText;
+      font-weight: 300;
+
+      &::after{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        content: '/';
+      }
+    }
+
+    &-unit_active{
+      color: $colorSelectedPink;
+      font-weight: 700;
+    }
   }
 }
 
