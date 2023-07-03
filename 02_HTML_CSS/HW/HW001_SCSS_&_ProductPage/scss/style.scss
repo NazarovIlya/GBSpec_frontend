@@ -196,6 +196,140 @@ a{
   }
 }
 
+.presenter_head{
+  max-width: $maxWidthSite;
+  height: 148px;
+  background: $colorBackgroundHead;
+  @extend %paddingsLR;
+  @extend %flexItemsContentCenter;
+  justify-content: space-between;
+
+  &-title{
+    color: $colorSelectedPink;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &-breadcrumbs{
+
+  }
+}
+
+.content{
+
+}
+
+.product{
+  height: 777px;
+  background-color: $colorBackgroundProduct;
+  @extend %flexItemsContentCenter;
+  justify-content: space-between;
+
+  &-arrow_left, &-arrow_right{
+    @extend %flexItemsContentCenter;
+    background-color: #2A2A2A26;
+    width: $widthArrow;
+    height: $heightArrow;
+    padding: 8px;
+
+    & svg:hover path{
+      @extend  %flexItemsContentCenter;
+      fill: $colorSelectedPink;
+    }
+  }
+}
+
+.product_box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // z-index: $z-indexHeader;
+  height: 1373px;
+
+  &-card{
+    width: 71%;
+    height: 601px;
+    background-color: #FFF;
+    // z-index: $z-indexHeader + 1;
+    position: absolute;
+    top: -50px;
+    @extend %flexItemsCenter;
+    flex-direction: column;
+
+    &-title{
+      color: $colorSelectedPink;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: normal;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    &-subtitle{
+      color: $colorProductText;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: normal;
+      margin-bottom: 3rem;
+    }
+
+    &-text{
+      font-size: 14px;
+      font-weight: 300;
+      line-height: normal;
+      width: 56%;
+      text-align: center;
+      color: #5E5E5E;
+    }
+
+    &-price{
+      width: 56%;
+      text-align: center;
+      color: $colorPriceText;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: normal;
+      margin-top: 1.8rem;
+      margin-bottom: 4rem;
+    }
+
+    &-line{
+      width: 56%;
+      height: 1px;
+      background-color: $colorProductLine;
+    }
+  }
+}
+
+.sort{
+  @extend %flexItemsContentCenter;
+
+  & summary{
+    display: block;
+    color: $colorGray;
+  }
+  & summary::-webkit-details-marker{
+    display: none;
+  }
+
+  & summary::before{
+    content: '';
+    margin-left: 1.8rem;
+  }
+
+  // & summary::after{
+  //   content: '\142F';
+  //   height: .6rem;
+  //   padding-left: 0.5rem;
+  // }
+
+  & svg{
+    padding-left: 0.5rem;
+  }
+}
+
 .offer{
   margin-bottom: 80px;
 
@@ -505,7 +639,7 @@ a{
       @extend %flexItemsCenter;
 
       input{
-        background-color: $colorInputBacground;
+        background-color: $colorInputBackground;
         height: 50px;
         width: 240px;
         border-top-left-radius: 25px;
