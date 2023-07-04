@@ -212,23 +212,23 @@ a{
   }
 
   &-breadcrumbs{
-    font-size: 14px;
-    line-height: 17px;
 
     &-unit_link{
+      font-size: 14px;
+      line-height: 17px;
       color: $colorBreadcrumbsText;
       font-weight: 300;
 
-      &::after{
+      &:not(:last-child)::after{
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         content: '/';
       }
-    }
 
-    &-unit_active{
-      color: $colorSelectedPink;
-      font-weight: 700;
+      &:last-child{
+        color: $colorSelectedPink;
+        font-weight: 700;
+      }
     }
   }
 }
