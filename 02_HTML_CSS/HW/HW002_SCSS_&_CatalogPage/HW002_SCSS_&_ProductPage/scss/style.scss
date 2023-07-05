@@ -15,6 +15,14 @@ a{
   text-decoration: none;
 }
 
+summary {
+  display: block;
+}
+
+  summary::-webkit-details-marker {
+  display: none;
+}
+
 .box-content{
   overflow: hidden;
 }
@@ -151,13 +159,50 @@ a{
 
 .presenter{
   background: $colorLightGray;
-  margin-bottom: 65px;
 
-  &-block{
+  &__main{
     max-width: 1600px;
     max-height: 764px;
     margin: 0 auto;
     @extend %flexItemsCenter;
+    margin-bottom: 65px;
+  }
+
+  &__head{
+    max-width: $maxWidthSite;
+    height: 148px;
+    background: $colorBackgroundHead;
+    @extend %paddingsLR;
+    @extend %flexItemsContentCenter;
+    justify-content: space-between;
+  
+    &_title{
+      color: $colorSelectedPink;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    &__breadcrumbs{
+  
+      &__unit-link{
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorBreadcrumbsText;
+        font-weight: 300;
+  
+        &:not(:last-child)::after{
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          content: '/';
+        }
+  
+        &:last-child{
+          color: $colorSelectedPink;
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   &-photo{
@@ -193,45 +238,109 @@ a{
   
   &-header span{
     color: $colorSelectedPink;
-  }
+  }  
 }
 
-.presenter-head{
-  max-width: $maxWidthSite;
-  height: 148px;
-  background: $colorBackgroundHead;
+.filters{
+  // @extend %flexItemsCenter;
   @extend %paddingsLR;
-  @extend %flexItemsContentCenter;
-  justify-content: space-between;
+  box-sizing: border-box;
+  height: 133px;
+  position: relative;
+}
 
-  &-title{
-    color: $colorSelectedPink;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: normal;
+.filter{
+  padding: 13px 16px 16px 16px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 39px;
+  width: 23%;
+  z-index: $z-indexHeader + 1;
+
+  &__heading{
+    color: $colorSiteBlack;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: uppercase;
   }
 
-  &-breadcrumbs{
+  &[open]{
+    background-color: $colorSiteWhite;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, .21);
+  }
 
-    &-unit_link{
-      font-size: 14px;
-      line-height: 17px;
-      color: $colorBreadcrumbsText;
-      font-weight: 300;
+  &[open] &__heading{
+    color: $colorSelectedPink; 
+  }  
 
-      &:not(:last-child)::after{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        content: '/';
-      }
+  &[open] path{
+    fill: $colorSelectedPink;
+  }  
 
-      &:last-child{
-        color: $colorSelectedPink;
-        font-weight: 700;
-      }
+  &__summary{
+    @extend %flexItemsCenter;
+    gap: 11px;
+  }
+
+  &__item{
+    margin: 16px;
+  }
+
+  &__subtitle{
+    color: $colorGray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding: 8px 11px 11px 11px;
+    border-bottom: 1px solid $colorProductLine;
+    border-left: 5px solid $colorSelectedPink;
+  }
+
+  &__item[open] &__subtitle{
+    color: $colorSelectedPink;
+  }
+
+  &__link-box{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 24px 16px;
+  }
+
+  &__link{
+    color: $colorGray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    &:hover{
+      color: $colorSelectedPink;
     }
   }
 }
+
+  .sort{
+    @extend %flexItemsContentCenter;
+  
+    & summary{
+      display: block;
+      color: $colorGray;
+    }
+    & summary::-webkit-details-marker{
+      display: none;
+    }
+  
+    & summary::before{
+      content: '';
+      margin-left: 1.8rem;
+    }
+  
+    & svg{
+      padding-left: 0.5rem;
+    }
+  }
 
 .content{
 
@@ -362,27 +471,6 @@ a{
   }
 }
 
-.sort{
-  @extend %flexItemsContentCenter;
-
-  & summary{
-    display: block;
-    color: $colorGray;
-  }
-  & summary::-webkit-details-marker{
-    display: none;
-  }
-
-  & summary::before{
-    content: '';
-    margin-left: 1.8rem;
-  }
-
-  & svg{
-    padding-left: 0.5rem;
-  }
-}
-
 .offer{
   margin-bottom: 80px;
 
@@ -450,7 +538,11 @@ a{
 }
 
 .featured{
-  margin-bottom: 80px; 
+  margin-bottom: 80px;
+  
+  &__catalog{
+    margin-bottom: 18px;
+  }
 
   &-description{
     text-align: center;
@@ -478,7 +570,6 @@ a{
     display: flex;
     justify-content: space-between;
   }
-
   
   &-item{
     width: 32%;
@@ -596,6 +687,19 @@ a{
       background: #E5E5E5;
     }
   }
+}
+
+.pages{
+  @extend %flexItemsContentCenter;
+}
+
+.page-numbers{
+  @extend %flexItemsContentCenter;
+  width: 283px;
+  background: yellowgreen; //TODO
+  padding: 15px;
+  gap: 15px;
+  @extend %flexWrapBetween;
 }
 
 .footer{
