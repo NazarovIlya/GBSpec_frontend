@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
@@ -78,17 +79,17 @@
           </section>
           <main class="content">
             <section class="product">
-              <div class="product-arrow_left">
+              <a href="#" class="product-arrow_left">
                 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z" fill="black"/>
                 </svg> 
-              </div>
+              </a>
               <img src="./img/products/product_women.png" alt="">
-              <div class="product-arrow_right">
+              <a href="#" class="product-arrow_right">
                 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.2998 23.2499L17.0498 15.4999L9.2998 7.7499L10.8498 4.6499L21.6998 15.4999L10.8498 26.3499L9.2998 23.2499Z" fill="black"/>
                   </svg>                  
-              </div>
+              </a>
             </section>
             <section class="product_box">
               <article class="product_box-card">
@@ -99,20 +100,74 @@
                 <div class="product_box-card-line"></div>
                 <figure class="product_box-card-sort_box">
                   <div class="sort">
-                    <details>
+                    <details class="sort__item">
                       <summary>CHOOSE COLOR <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81724 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846V5.64846Z" fill="#6F6E6E"/>
                         </svg></summary>
+                        <div class="sort__box sort__box__product">
+                          <div class="sort__checkbox">
+                            <input id="red" type="checkbox">
+                            <label for="red">RED</label>
+                          </div>
+                          <div class="sort__checkbox">
+                            <input id="blue" type="checkbox">
+                            <label for="blue">BLUE</label>
+                          </div>
+                          <div class="sort__checkbox">
+                            <input id="aqua" type="checkbox">
+                            <label for="aqua">AQUA</label>
+                          </div>
+                          <div class="sort__checkbox">
+                            <input id="black" type="checkbox">
+                            <label for="black">BLACK</label>
+                          </div>
+                        </div>
                     </details>
-                    <details>
+                    <details class="sort__item">
                       <summary>CHOOSE SIZE <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81724 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846V5.64846Z" fill="#6F6E6E"/>
                         </svg></summary>
+                        <div class="sort__box sort__box__product">
+                          <div class="sort__checkbox">
+                            <input id="XS" type="checkbox">
+                            <label for="XS">XS</label>
+                          </div>
+                          <div class="sort__checkbox">
+                            <input id="S" type="checkbox">
+                            <label for="S">S</label>
+                          </div>
+                          <div class="sort__checkbox">
+                            <input id="M" type="checkbox">
+                            <label for="M">M</label>
+                          </div>
+                          <div class="sort__checkbox">
+                            <input id="L" type="checkbox">
+                            <label for="L">L</label>
+                          </div>
+                        </div>
                     </details>
-                    <details>
+                    <details class="sort__item">
                       <summary>QUANTITY <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81724 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846V5.64846Z" fill="#6F6E6E"/>
                         </svg></summary>
+                        <div class="sort__box sort__box__product">
+                          <div class="sort__checkbox">
+                            <input id="XS" type="checkbox">
+                            <label for="XS">XS</label>
+                          </div>
+                          <div class="sort__checkbox">
+                            <input id="S" type="checkbox">
+                            <label for="S">S</label>
+                          </div>
+                          <div class="sort__checkbox">
+                            <input id="M" type="checkbox">
+                            <label for="M">M</label>
+                          </div>
+                          <div class="sort__checkbox">
+                            <input id="L" type="checkbox">
+                            <label for="L">L</label>
+                          </div>
+                        </div>  
                       </details>               
                   </div>   
                   <div class="product_box-card-sort_box-to_buy">

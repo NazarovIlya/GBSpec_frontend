@@ -7,7 +7,7 @@
   padding-right: 14.3%;
 }
 
-.footer-subscribe-form, .product_box-card, .filter__summary, .presenter__main, .header {
+.footer-subscribe-form, .product_box-card, .sort__checkbox, .filter__summary, .filters, .presenter__main, .header {
   display: flex;
   align-items: center;
 }
@@ -291,12 +291,19 @@ summary::-webkit-details-marker {
   color: #F16D7F;
 }
 
-.sort summary {
-  display: block;
+.sort {
   color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-transform: uppercase;
 }
-.sort summary::-webkit-details-marker {
-  display: none;
+.sort__catalog {
+  gap: 16px;
+  padding: 7px 16px 16px;
+  box-sizing: border-box;
+  margin-left: 22%;
+  position: relative;
 }
 .sort summary::before {
   content: "";
@@ -304,6 +311,38 @@ summary::-webkit-details-marker {
 }
 .sort svg {
   padding-left: 0.5rem;
+}
+.sort__item {
+  position: relative;
+}
+.sort__box {
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 12px 9px;
+  position: absolute;
+  z-index: 11;
+  margin-top: 5px;
+}
+.sort__box__product {
+  left: 30px;
+}
+.sort__box__catalog {
+  left: 10px;
+}
+.sort__box__catalog_first {
+  left: 28px;
+  width: 45%;
+}
+.sort__checkbox {
+  gap: 9px;
+}
+.sort__checkbox label {
+  color: #6F6E6E;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .product {
