@@ -151,13 +151,50 @@ a{
 
 .presenter{
   background: $colorLightGray;
-  margin-bottom: 65px;
 
-  &-block{
+  &__main{
     max-width: 1600px;
     max-height: 764px;
     margin: 0 auto;
     @extend %flexItemsCenter;
+    margin-bottom: 65px;
+  }
+
+  &__head{
+    max-width: $maxWidthSite;
+    height: 148px;
+    background: $colorBackgroundHead;
+    @extend %paddingsLR;
+    @extend %flexItemsContentCenter;
+    justify-content: space-between;
+  
+    &_title{
+      color: $colorSelectedPink;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    &__breadcrumbs{
+  
+      &__unit-link{
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorBreadcrumbsText;
+        font-weight: 300;
+  
+        &:not(:last-child)::after{
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          content: '/';
+        }
+  
+        &:last-child{
+          color: $colorSelectedPink;
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   &-photo{
@@ -193,44 +230,7 @@ a{
   
   &-header span{
     color: $colorSelectedPink;
-  }
-}
-
-.presenter-head{
-  max-width: $maxWidthSite;
-  height: 148px;
-  background: $colorBackgroundHead;
-  @extend %paddingsLR;
-  @extend %flexItemsContentCenter;
-  justify-content: space-between;
-
-  &-title{
-    color: $colorSelectedPink;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  &-breadcrumbs{
-
-    &-unit_link{
-      font-size: 14px;
-      line-height: 17px;
-      color: $colorBreadcrumbsText;
-      font-weight: 300;
-
-      &:not(:last-child)::after{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        content: '/';
-      }
-
-      &:last-child{
-        color: $colorSelectedPink;
-        font-weight: 700;
-      }
-    }
-  }
+  }  
 }
 
 .content{
