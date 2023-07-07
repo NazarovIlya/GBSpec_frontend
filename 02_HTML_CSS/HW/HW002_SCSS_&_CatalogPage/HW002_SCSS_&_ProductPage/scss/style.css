@@ -147,7 +147,7 @@ summary::-webkit-details-marker {
   margin-left: 22px;
   margin-bottom: 11px;
 }
-.burger-menu-block-last-link {
+.burger-menu-block :last-child h4:last-child {
   margin-bottom: 0;
 }
 

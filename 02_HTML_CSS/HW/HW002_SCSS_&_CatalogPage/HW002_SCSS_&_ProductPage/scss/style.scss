@@ -144,7 +144,7 @@ summary {
     margin-bottom: 11px;
   }
 
-  &-last-link{
+  & :last-child h4:last-child{
     margin-bottom: 0;
   }
 }
