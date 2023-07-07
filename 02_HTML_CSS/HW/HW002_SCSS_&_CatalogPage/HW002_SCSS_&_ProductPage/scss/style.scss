@@ -756,10 +756,19 @@ summary {
 .page-numbers{
   @extend %flexItemsContentCenter;
   width: 283px;
-  background: yellowgreen; //TODO
+  background: $colorSiteWhite;
   padding: 15px;
   gap: 15px;
   @extend %flexWrapBetween;
+
+  & a{
+    color: $colorProductText;
+
+    & :hover{
+      color: $colorSelectedPink;
+      fill: $colorSelectedPink;
+    }
+  }
 }
 
 .footer{

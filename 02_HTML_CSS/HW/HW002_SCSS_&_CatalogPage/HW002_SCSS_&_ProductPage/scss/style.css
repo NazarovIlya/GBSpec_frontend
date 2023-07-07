@@ -628,9 +628,16 @@ summary::-webkit-details-marker {
 
 .page-numbers {
   width: 283px;
-  background: yellowgreen;
+  background: #FFF;
   padding: 15px;
   gap: 15px;
+}
+.page-numbers a {
+  color: #4D4D4D;
+}
+.page-numbers a :hover {
+  color: #F16D7F;
+  fill: #F16D7F;
 }
 
 .footer-featers {
