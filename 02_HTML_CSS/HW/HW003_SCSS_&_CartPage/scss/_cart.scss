@@ -1,0 +1,18 @@
+.cart{
+  min-height: 998px;
+  background-color: $colorSiteWhite;
+  @extend %paddingsLR;
+}
+
+.cart-content{
+  @extend %flexItemCenter;
+
+  &__img{
+    
+  }
+
+  &__item{
+  
+  }
+}
+
