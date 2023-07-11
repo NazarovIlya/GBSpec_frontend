@@ -1,18 +1,134 @@
+@import 'inheritance';
+
 .cart{
+  max-width: $maxWidthSite;
+  display: flex;
+  justify-content: center;  
+  // flex-wrap: wrap;
+  // @extend %paddingsLR;
+  flex-direction: row;
+  gap: 8%;
   min-height: 998px;
+  padding-top: 96px;
   background-color: $colorSiteWhite;
-  @extend %paddingsLR;
-}
 
-.cart-content{
-  @extend %flexItemCenter;
-
-  &__img{
-    
+  
+  &__left{
+    display: flex;
+    flex-direction: column;
+    max-width: 652px;
+    gap: 40px;
   }
 
   &__item{
+    display: flex;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+
+    &__img{
+      max-width: 262px;
+      max-height: 306px;
+    }
   
+    &__content{
+      padding: 22px 97px 42px 31px;
+      background-color: $colorSiteWhite;
+    }
+  
+    &__title{
+      width: 262px;
+      color: $colorSelectedDarkGray;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 42px;
+      
+      &:hover{
+        color: $colorSelectedPink;
+      }
+    }
+
+    &__text{
+      color: $colorCartText;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: normal;
+
+      & input{
+        margin-left: 24px;
+        width: 44px;
+        height: 24px;
+        text-align: center;
+
+        &[type='number']{
+          color: $colorBreadcrumbsText;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        &[type="number"]::-webkit-outer-spin-button, &[type="number"]::-webkit-inner-spin-button {
+          display: none;
+        }
+      }
+
+      &_price{
+        color: $colorPriceText;
+      }
+
+      &_info{
+        color: $colorGray;
+      }
+    }
+  
+    &__close{
+      @extend %flexItemsContentCenter;
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      top: 28px;
+      right: 28px;
+  
+      &:hover{
+        transform:scale(80%, 80%);
+        transition: .4s;
+      }
+    }    
+  }
+
+  &__right{
+    margin-top: 17px;
+    width: 360px;
+    height: 100px;
+    background-color: #ccc;
+  }
+
+  &__form{
+    display: flex;
+    gap: 20.5px;
+
+    &__title{
+      text-transform: uppercase;
+      color: $colorSelectedDarkGray;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    
+  }
+}
+
+@media screen and (max-width: 1200px){
+
+  .cart{
+
+    padding: 0 16px;
+    padding-top: 59px;
+
+    &__right{
+      max-width: 360px;
+      min-width: 240px;
+    }
   }
 }
 

@@ -143,6 +143,10 @@ summary {
     color: $colorGray;
     margin-left: 22px;
     margin-bottom: 11px;
+
+    &:hover{
+      color: $colorSelectedPink;
+    }
   }
 
   & :last-child h4:last-child{
