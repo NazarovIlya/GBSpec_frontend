@@ -1,0 +1,129 @@
+@import 'vars';
+@import 'inheritance';
+
+.registration{
+  max-width: $maxWidthSite;
+  // @extend %paddingsLR;
+}
+
+.registration-box{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 8%;
+  margin-top: 64px;
+
+
+  &__left{
+    width: 360px;
+    min-height: 100px;
+  }
+
+  &__input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+    &:nth-child(2){
+      margin-bottom: 16px;
+    }
+
+    &__name{
+      color: $colorSiteBlack;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    & input{
+      height: 45px;
+      color: #B1B1B1;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: normal;
+      border: 1px solid #A4A4A4;
+      padding-left: 17px;
+    }
+
+    &:first-child{
+      margin-bottom: 33px;
+    }
+  }
+
+  &__radio{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    & label{
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+  }
+
+  &__placeholder{
+    color: #B1B1B1;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 39px;
+  }
+
+  &__button-box{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 96px;
+  }
+
+  &__button{
+    color: $colorSiteWhite;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    background-color: $colorSelectedPink;
+    width: 167px;
+    height: 50px;
+    @extend %flexItemsContentCenter;
+    gap: 20px;
+    border: none;
+    transition: .4s;
+
+    &:hover{
+      transform: scale(95%, 95%);
+    }
+  }
+
+  &__right{
+    width: 652px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    &__text{
+      color: $colorSiteBlack;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: normal;
+
+      &_title{
+        text-transform: uppercase;
+      }
+    }
+
+    &__list{
+      list-style-type: none;
+    }
+
+    & ul li{
+      padding-left: 2rem;
+      background-image: url(../img/list-marker.svg);
+      background-position: 0 0;
+      background-size: 1rem 1rem;
+      background-repeat: no-repeat;
+    }
+
+    & ul li:not(:last-child){
+      padding-bottom: 16px;
+    }
+  }
+}
