@@ -26,3 +26,9 @@
   padding: 50px;
   background-color: bisque;
 }
+
+.name{
+  font-size: 36px;
+  font-style: bold;
+  text-align: center;
+}
