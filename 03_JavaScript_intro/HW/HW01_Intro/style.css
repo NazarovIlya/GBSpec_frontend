@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  padding: 20px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.task_1{
+  padding: 40px;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form{
+  padding: 50px;
+  background-color: bisque;
+}
