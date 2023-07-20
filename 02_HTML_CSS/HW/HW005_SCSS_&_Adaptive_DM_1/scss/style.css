@@ -550,6 +550,7 @@ summary::-webkit-details-marker {
 .presenter__main {
   max-width: 1600px;
   max-height: 764px;
+  min-height: 363px;
   margin: 0 auto;
   margin-bottom: 65px;
 }
@@ -1174,7 +1175,7 @@ summary::-webkit-details-marker {
   }
   .header {
     padding-left: 32px;
-    padding-right: 0px;
+    padding-right: 32px;
   }
   .presenter-photo {
     max-width: 386px;
@@ -1188,8 +1189,12 @@ summary::-webkit-details-marker {
     font-size: 16px;
     line-height: 17px;
   }
+  .presenter__head {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .product {
-    position: relative;
+    justify-content: center;
   }
   .product-arrow_right, .product-arrow_left {
     position: absolute;
@@ -1201,13 +1206,9 @@ summary::-webkit-details-marker {
   .product-arrow_left {
     left: 0;
   }
-  .product img {
-    position: absolute;
-    width: 100vw;
-    z-index: 10;
-  }
   .product_box-card {
     width: 100%;
+    box-shadow: none;
   }
   .offer-block {
     padding: 0px 16px;
@@ -1265,8 +1266,11 @@ summary::-webkit-details-marker {
     width: 100vw;
     box-sizing: border-box;
   }
-  .presenter {
-    margin-bottom: 40px;
+  .presenter__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
   }
   .presenter-block {
     height: 363px;

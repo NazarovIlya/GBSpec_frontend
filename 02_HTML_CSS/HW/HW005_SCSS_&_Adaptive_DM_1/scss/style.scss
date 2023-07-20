@@ -169,6 +169,7 @@ summary {
   &__main{
     max-width: 1600px;
     max-height: 764px;
+    min-height: 363px;
     margin: 0 auto;
     @extend %flexItemsCenter;
     margin-bottom: 65px;
@@ -336,7 +337,6 @@ summary {
   text-transform: uppercase;
 
   &__catalog{
-    // position: absolute;
     gap: 16px;
     padding: 7px 16px 16px;
     box-sizing: border-box;
@@ -435,7 +435,6 @@ summary {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // z-index: $z-indexHeader;
   height: 601px;
   padding-top: 128px;
 
@@ -959,10 +958,11 @@ summary {
 
   .header{
     padding-left: 32px;
-    padding-right: 0px;
+    padding-right: 32px;
   }
 
   .presenter{
+
     &-photo{
       max-width: 386px;
       max-height: 368px;
@@ -977,11 +977,20 @@ summary {
       font-size: 16px;
       line-height: 17px;
     }
+
+    &__head{
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  .content{
+    
   }
 
   .product{
 
-    position: relative;
+    justify-content: center;
 
     &-arrow_right, &-arrow_left{
       position: absolute;
@@ -995,18 +1004,13 @@ summary {
     &-arrow_left{
       left: 0;
     }
-
-    & img{
-      position: absolute;
-      width: 100vw;
-      z-index: $z-indexHeader;
-    }
   }
 
   .product_box{
   
     &-card{
       width: 100%;
+      box-shadow: none;
     }
   }
 
@@ -1089,7 +1093,13 @@ summary {
   }
 
   .presenter{
-    margin-bottom: 40px;
+
+    &__head{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+    }
 
     &-block{
       height: 363px;
