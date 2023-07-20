@@ -1,0 +1,25 @@
+%fontSite {
+  font-family: 'Lato', serif, sans-serif;
+}
+
+%paddingsLR {
+  padding-left: 14.3%;
+  padding-right: 14.3%;
+}
+
+%flexItemsCenter{
+  display: flex;
+  align-items: center;
+}
+
+%flexItemsContentCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flexWrapBetween{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
