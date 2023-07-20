@@ -1188,6 +1188,27 @@ summary::-webkit-details-marker {
     font-size: 16px;
     line-height: 17px;
   }
+  .product {
+    position: relative;
+  }
+  .product-arrow_right, .product-arrow_left {
+    position: absolute;
+    z-index: 11;
+  }
+  .product-arrow_right {
+    right: 0;
+  }
+  .product-arrow_left {
+    left: 0;
+  }
+  .product img {
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+  }
+  .product_box-card {
+    width: 100%;
+  }
   .offer-block {
     padding: 0px 16px;
     gap: 1%;
@@ -1197,6 +1218,9 @@ summary::-webkit-details-marker {
   }
   .featured-item {
     width: 48%;
+  }
+  .featured-item:last-child {
+    display: none;
   }
   .footer-featers {
     height: auto;

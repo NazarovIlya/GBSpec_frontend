@@ -979,6 +979,37 @@ summary {
     }
   }
 
+  .product{
+
+    position: relative;
+
+    &-arrow_right, &-arrow_left{
+      position: absolute;
+      z-index: $z-indexHeader + 1;
+    }
+
+    &-arrow_right{
+      right: 0;
+    }
+
+    &-arrow_left{
+      left: 0;
+    }
+
+    & img{
+      position: absolute;
+      width: 100vw;
+      z-index: $z-indexHeader;
+    }
+  }
+
+  .product_box{
+  
+    &-card{
+      width: 100%;
+    }
+  }
+
   .offer{
     &-block{
       padding: 0px 16px;
@@ -994,6 +1025,10 @@ summary {
 
     &-item{
       width: 48%;
+    }
+
+    &-item:last-child{
+      display: none;
     }
   }
 
