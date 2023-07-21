@@ -127,3 +127,37 @@
     }
   }
 }
+
+@media screen and (max-width:1125px) {
+
+  .registration{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+
+  .registration{
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .registration{
+  }
+
+  .registration-box{
+
+    &__left{
+    }
+
+    &__right{
+
+      &__text{
+        font-size: 16px;
+      }
+      
+    }
+  }
+}

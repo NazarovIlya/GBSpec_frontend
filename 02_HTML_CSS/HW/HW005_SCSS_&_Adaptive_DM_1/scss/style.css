@@ -487,6 +487,17 @@
   padding-bottom: 16px;
 }
 
+@media screen and (max-width: 1125px) {
+  .registration {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .registration-box__right__text {
+    font-size: 16px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
