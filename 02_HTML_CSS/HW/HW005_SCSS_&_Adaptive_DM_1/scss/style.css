@@ -118,8 +118,8 @@
 }
 .cart__item__close {
   position: absolute;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   top: 28px;
   right: 28px;
 }
@@ -155,29 +155,35 @@
 .cart__right {
   margin-top: 17px;
   width: 360px;
-  height: 100px;
 }
 .cart__form {
   display: flex;
   gap: 20.5px;
   flex-direction: column;
+  height: 214px;
+  justify-content: space-between;
+}
+.cart__form__content {
+  display: flex;
+  gap: 20.5px;
+  flex-direction: column;
+}
+.cart__form__content input {
+  height: 45px;
+  stroke-width: 1px;
+  stroke: #A4A4A4;
+}
+.cart__form__content input[type=text] {
+  padding-left: 1rem;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: normal;
 }
 .cart__form__title {
   text-transform: uppercase;
   color: #222;
   font-size: 16px;
-  font-weight: 300;
-  line-height: normal;
-}
-.cart__form input {
-  height: 45px;
-  stroke-width: 1px;
-  stroke: #A4A4A4;
-}
-.cart__form input[type=text] {
-  padding-left: 1rem;
-  color: #B1B1B1;
-  font-size: 13px;
   font-weight: 300;
   line-height: normal;
 }
@@ -272,6 +278,81 @@
   .cart__right {
     max-width: 360px;
     min-width: 240px;
+  }
+}
+@media (max-width: 1135px) {
+  .cart {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+  }
+  .cart__left {
+    max-width: calc(100vw - 32px);
+  }
+  .cart__item__content {
+    width: 76vw;
+  }
+  .cart__item__close {
+    right: 24px;
+  }
+  .cart__buttons {
+    justify-content: center;
+    gap: 48px;
+    margin-top: 22px;
+  }
+  .cart__right {
+    margin-top: 64px;
+  }
+  .cart__form {
+    flex-direction: row;
+    width: calc(100vw - 32px);
+    height: auto;
+  }
+  .cart__form__content {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+  }
+  .cart__button_form {
+    margin-bottom: 128px;
+  }
+  .cart__checkout {
+    margin-top: 39px;
+  }
+}
+@media screen and (max-width: 845px) {
+  .cart__checkout {
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 426px) {
+  .presenter__head {
+    justify-content: center;
+  }
+  .cart {
+    flex-direction: column;
+    align-items: inherit;
+  }
+  .cart__left {
+    max-width: 743px;
+  }
+  .cart__item {
+    height: 188px;
+  }
+  .cart__item__img {
+    max-width: 144px;
+    max-height: 188px;
+  }
+  .cart__item__content {
+    width: 214px;
+  }
+  .cart__item__close img {
+    width: 11px;
+    height: 11px;
+  }
+  .cart__buttons {
+    justify-content: center;
+    gap: 48px;
   }
 }
 .footer-subscribe-form button, .footer-subscribe-form input, .burger-menu-block h1, body {

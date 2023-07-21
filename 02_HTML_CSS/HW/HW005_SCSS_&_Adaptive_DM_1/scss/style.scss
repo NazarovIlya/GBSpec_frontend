@@ -1004,13 +1004,12 @@ summary {
     &-arrow_left{
       left: 0;
     }
-  }
 
-  .product_box{
-  
-    &-card{
-      width: 100%;
-      box-shadow: none;
+    &_box{
+      &-card{
+        width: 100%;
+        box-shadow: none;
+      }
     }
   }
 
