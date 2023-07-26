@@ -250,7 +250,7 @@ summary {
 
 .filters{
   @extend %flexItemsCenter;
-  @extend %paddingsLR;
+  // @extend %paddingsLR;
   box-sizing: border-box;
   height: 133px;
   position: relative;
@@ -262,6 +262,7 @@ summary {
   position: absolute;
   top: 39px;
   width: 23%;
+  left: 14.3%;
   z-index: $z-indexHeader + 1;
 
   &__heading{
@@ -988,6 +989,13 @@ summary {
     
   }
 
+  .filters{
+  }
+
+  .filter{
+    left: 0;
+  }
+
   .product{
 
     justify-content: center;
@@ -1126,7 +1134,18 @@ summary {
     }
   }
 
+  .filter{
+
+    &__heading{
+      display: none;
+    }
+  }
+
   .sort{
+
+    &__catalog{
+      margin-left: 9vw;
+    }
    
     & summary::before{
       content: '';

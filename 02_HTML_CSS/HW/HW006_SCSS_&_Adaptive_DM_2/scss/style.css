@@ -2,7 +2,7 @@
   font-family: "Lato", serif, sans-serif;
 }
 
-.featured .catalog, .featured-items, .offer-block, .filters, .presenter__head, .header {
+.featured .catalog, .featured-items, .offer-block, .presenter__head, .header {
   padding-left: 14.3%;
   padding-right: 14.3%;
 }
@@ -28,7 +28,7 @@
   font-family: "Lato", serif, sans-serif;
 }
 
-.featured .catalog, .featured-items, .offer-block, .filters, .presenter__head, .header {
+.featured .catalog, .featured-items, .offer-block, .presenter__head, .header {
   padding-left: 14.3%;
   padding-right: 14.3%;
 }
@@ -359,7 +359,7 @@
   font-family: "Lato", serif, sans-serif;
 }
 
-.featured .catalog, .featured-items, .offer-block, .filters, .presenter__head, .header {
+.featured .catalog, .featured-items, .offer-block, .presenter__head, .header {
   padding-left: 14.3%;
   padding-right: 14.3%;
 }
@@ -715,6 +715,7 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 39px;
   width: 23%;
+  left: 14.3%;
   z-index: 11;
 }
 .filter__heading {
@@ -1285,6 +1286,9 @@ summary::-webkit-details-marker {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .filter {
+    left: 0;
+  }
   .product {
     justify-content: center;
   }
@@ -1383,6 +1387,12 @@ summary::-webkit-details-marker {
   .presenter-header h2 {
     font-size: 22px;
     line-height: 26px;
+  }
+  .filter__heading {
+    display: none;
+  }
+  .sort__catalog {
+    margin-left: 9vw;
   }
   .sort summary::before {
     content: "";
