@@ -157,7 +157,33 @@
       &__text{
         font-size: 16px;
       }
-      
     }
   }
+}
+
+@media screen and (max-width:525px) {
+
+  .registration{
+  }
+
+  .registration-box{
+    flex-direction: column;
+    margin-bottom: 96px;
+    justify-content: center;
+    align-items: center;
+
+    &__left{
+      width: 95vw;
+    }
+
+    &__button-box{
+      margin-bottom: 57px;
+    }
+
+    &__right{
+      width: 95vw;
+    }
+  }
+
+  
 }

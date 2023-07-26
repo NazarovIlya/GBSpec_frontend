@@ -337,7 +337,7 @@
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 620px) {
 
   .presenter{
     &__head{
@@ -351,6 +351,7 @@
 
     &__left{
       max-width: 743px;
+      gap: 30px;
     }
 
     &__item{
@@ -362,18 +363,89 @@
       }
 
       &__content{
-        width: 214px;
+        width: 100vw;
+        padding: 13px 17px 17px;
       }
 
       &__close img{
         width: 11px;
         height: 11px;
       }
+
+      &__title{
+        width: 45vw;
+        font-size: 16px;
+        margin-bottom: 26px;
+        line-height: normal;
+      }
+
+      &__text{
+        font-size: 14px;
+        line-height: normal;
+
+        & input{
+         width: 25px;
+         height: 15px;
+
+        &[type='number']{
+          font-size: 12px;
+         }
+        }
+      }
+
+      &__close{
+        top: 17px;
+        right: 17px;
+      }
     }
 
     &__buttons{
       justify-content: center;
       gap: 48px;
+      margin-top: 0;
+
+      &_left, &_right{
+        width: 175px;
+        height: 33px;
+        font-size: 12px;
+      }
+    }
+    &__right{
+      margin-top: 48px;
+    }
+
+    &__form{
+      flex-direction: column;
+      margin-bottom: 96px;
+
+      &__content{
+        width: 90vw;
+        align-items: inherit;
+      }
+    }
+
+    &__button{
+
+      &_form{
+        margin-bottom: 48px;
+      }
+
+      &_checkout{
+        font-size: 16px;
+      }
+    }
+
+    &__checkout{
+      margin-top: 0;
+      width: inherit;
+    }
+
+    &__sub-total{
+      font-size: 11px;
+    }
+
+    &__grand-total{
+      font-size: 16px;
     }
   }
 }

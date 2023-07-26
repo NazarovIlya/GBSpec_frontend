@@ -325,7 +325,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 620px) {
   .presenter__head {
     justify-content: center;
   }
@@ -335,6 +335,7 @@
   }
   .cart__left {
     max-width: 743px;
+    gap: 30px;
   }
   .cart__item {
     height: 188px;
@@ -344,15 +345,70 @@
     max-height: 188px;
   }
   .cart__item__content {
-    width: 214px;
+    width: 100vw;
+    padding: 13px 17px 17px;
   }
   .cart__item__close img {
     width: 11px;
     height: 11px;
   }
+  .cart__item__title {
+    width: 45vw;
+    font-size: 16px;
+    margin-bottom: 26px;
+    line-height: normal;
+  }
+  .cart__item__text {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .cart__item__text input {
+    width: 25px;
+    height: 15px;
+  }
+  .cart__item__text input[type=number] {
+    font-size: 12px;
+  }
+  .cart__item__close {
+    top: 17px;
+    right: 17px;
+  }
   .cart__buttons {
     justify-content: center;
     gap: 48px;
+    margin-top: 0;
+  }
+  .cart__buttons_left, .cart__buttons_right {
+    width: 175px;
+    height: 33px;
+    font-size: 12px;
+  }
+  .cart__right {
+    margin-top: 48px;
+  }
+  .cart__form {
+    flex-direction: column;
+    margin-bottom: 96px;
+  }
+  .cart__form__content {
+    width: 90vw;
+    align-items: inherit;
+  }
+  .cart__button_form {
+    margin-bottom: 48px;
+  }
+  .cart__button_checkout {
+    font-size: 16px;
+  }
+  .cart__checkout {
+    margin-top: 0;
+    width: inherit;
+  }
+  .cart__sub-total {
+    font-size: 11px;
+  }
+  .cart__grand-total {
+    font-size: 16px;
   }
 }
 .footer-subscribe-form button, .footer-subscribe-form input, .burger-menu-block h1, body {
@@ -496,6 +552,23 @@
 @media screen and (max-width: 768px) {
   .registration-box__right__text {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .registration-box {
+    flex-direction: column;
+    margin-bottom: 96px;
+    justify-content: center;
+    align-items: center;
+  }
+  .registration-box__left {
+    width: 95vw;
+  }
+  .registration-box__button-box {
+    margin-bottom: 57px;
+  }
+  .registration-box__right {
+    width: 95vw;
   }
 }
 * {
