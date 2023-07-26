@@ -1126,6 +1126,18 @@ summary {
     }
   }
 
+  .sort{
+   
+    & summary::before{
+      content: '';
+      margin-left: .8rem;
+    }
+  
+    & svg{
+      padding-left: 0.3rem;
+    }
+  }
+
   .offer{
     margin-bottom: 64px;
 

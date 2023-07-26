@@ -1384,6 +1384,13 @@ summary::-webkit-details-marker {
     font-size: 22px;
     line-height: 26px;
   }
+  .sort summary::before {
+    content: "";
+    margin-left: 0.8rem;
+  }
+  .sort svg {
+    padding-left: 0.3rem;
+  }
   .offer {
     margin-bottom: 64px;
   }
