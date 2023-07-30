@@ -1,53 +1,53 @@
-// // Задача №1
-// console.log('Задача № 1');
-// function getCube(number) {
-//   return number ** 3;
-// } 
+// Задача №1
+console.log('Задача № 1');
+function getCube(number) {
+  return number ** 3;
+} 
 
-// let num = Number(prompt('Введите любое целое число', 5));
-// console.log(num);
-// let res = getCube(num);
-// console.log(res);
-// alert(`Куб числа ${num} равен ${res}`)
-
-
-// // Задача №2
-// console.log('Задача № 2')
-// function getSalary(finance) {
-//   return finance * 0.87;
-// }
-
-// num = Number(prompt('Введите размер заработной платы до вычета НДФЛ:', 50000));
-// console.log(num);
-// res = getSalary(num);
-// console.log(res);
-// alert(`Размер заработной платы за вычетом налогов равен ${res}`);
+let num = Number(prompt('Введите любое целое число', 5));
+console.log(num);
+let res = getCube(num);
+console.log(res);
+alert(`Куб числа ${num} равен ${res}`)
 
 
-// // Задача №2
-// console.log('Задача № 3')
-// function getMax(array) {
-//   let max = array[0];
-//   for (let i = 1; i < array.length; i++) {
-//     if (array[i] > max) max = array[i];    
-//   }
-//   return max;
-// }
+// Задача №2
+console.log('Задача № 2')
+function getSalary(finance) {
+  return finance * 0.87;
+}
 
-// function getArray() {
-//   const arr = []
-//   for (let i = 0; i < 3; i++) {
-//     num = Number(prompt('Введите число через запятую:', 5));
-//     arr.push(num);
-//   }
-//   return arr;
-// }
+num = Number(prompt('Введите размер заработной платы до вычета НДФЛ:', 50000));
+console.log(num);
+res = getSalary(num);
+console.log(res);
+alert(`Размер заработной платы за вычетом налогов равен ${res}`);
 
-// const myArr = getArray();
-// console.log(myArr);
-// let res = getMax(myArr)
-// console.log(res);
-// alert(`Наибольшее число - ${res}`)
+
+// Задача №2
+console.log('Задача № 3')
+function getMax(array) {
+  let max = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > max) max = array[i];    
+  }
+  return max;
+}
+
+function getArray() {
+  const arr = []
+  for (let i = 0; i < 3; i++) {
+    num = Number(prompt('Введите число через запятую:', 5));
+    arr.push(num);
+  }
+  return arr;
+}
+
+const myArr = getArray();
+console.log(myArr);
+res = getMax(myArr)
+console.log(res);
+alert(`Наибольшее число - ${res}`)
 
 // Задача №4
 console.log('Задача № 4');
