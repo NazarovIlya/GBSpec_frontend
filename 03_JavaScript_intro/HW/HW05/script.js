@@ -105,6 +105,6 @@ const products_2 = [
   },
 ];
 
-const res = products_2.filter((el) => el.photos != undefined && el.photos != '');
+const res = products_2.filter((el) => el.photos && el.photos.length > 0);
 console.log(res);
 console.log();
