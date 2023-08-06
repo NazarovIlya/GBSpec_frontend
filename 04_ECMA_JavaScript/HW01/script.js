@@ -5,7 +5,7 @@ getMin = (array) => Math.min(...array);
 const arr = [1, 5, 7, 9];
 console.log(arr);
 console.log(`Наименшее число из массива ${getMin(arr)}`);
-console.log();
+console.log('\n');
 
 
 // Задача №2
@@ -22,7 +22,7 @@ function createCounter() {
 const counter = createCounter();
 console.log(counter.increment());
 console.log(counter.decrement());
-console.log();
+console.log('\n');
 
 // Задача №3
 console.log('Задача № 3\n');
@@ -33,4 +33,4 @@ getFactorial = (number) => {
 
 console.log(getFactorial(5));
 console.log(getFactorial(0));
-console.log();
+console.log('\n');
