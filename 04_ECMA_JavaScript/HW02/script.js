@@ -1,36 +1,44 @@
+import { Bank } from './Bank.js';
+import { Book } from './Book.js';
+import { Client } from './Client.js';
+import { Student } from './Student.js';
+
 // Задача №1
 console.log('Задача № 1\n');
-getMin = (array) => Math.min(...array);
 
-const arr = [1, 5, 7, 9];
-console.log(arr);
-console.log(`Наименшее число из массива ${getMin(arr)}`);
-console.log('\n');
+const book = new Book('Почему? Отчего? Зачем?', 'Джанни Родари', 592);
+console.log(book.displayInfo());
 
+console.log();
 
 // Задача №2
 console.log('Задача № 2\n');
 
-function createCounter() {
-  let counter = 0;
-  return {
-    increment: () => ++counter,
-    decrement: () => --counter,
-  }
-}
+const studentJohn = new Student('John Smith', 16, '10th grade');
+const studentJane = new Student('Jane Doe', 17, '11th grade');
 
-const counter = createCounter();
-console.log(counter.increment());
-console.log(counter.decrement());
-console.log('\n');
+console.log(studentJohn.displayInfo());
+console.log(studentJane.displayInfo());
+
+console.log();
 
 // Задача №3
 console.log('Задача № 3\n');
-getFactorial = (number) => {
-  if (number === 0) return 1;
-  else return getFactorial(number - 1) * number;
-}
 
-console.log(getFactorial(5));
-console.log(getFactorial(0));
-console.log('\n');
+const bank = new Bank('Мой Банк');
+
+const client1 = new Client("Иван", 25);
+const client2 = new Client("Мария", 30);
+
+bank.addClient(client1);
+bank.addClient(client2);
+
+bank.openAccount(client1, 123456789, 1000);
+bank.openAccount(client2, 987654321, 500);
+
+bank.deposit(123456789, 200);
+
+bank.withdraw(987654321, 100);
+
+bank.checkBalance(123456789);
+bank.checkBalance(987654321);
