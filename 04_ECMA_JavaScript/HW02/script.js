@@ -1,7 +1,7 @@
-import { Bank } from './Bank.js';
-import { Book } from './Book.js';
-import { Client } from './Client.js';
-import { Student } from './Student.js';
+import { Bank } from './models/Bank.js';
+import { Book } from './models/Book.js';
+import { Client } from './models/Client.js';
+import { Student } from './models/Student.js';
 
 // Задача №1
 console.log('Задача № 1\n');
