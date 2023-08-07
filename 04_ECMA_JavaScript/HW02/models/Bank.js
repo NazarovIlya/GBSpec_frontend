@@ -13,7 +13,7 @@ export class Bank {
       if (client === this.clientList[i]) {
         const item = { [score]: amount };
         this.scoreList.push(item);
-        console.log(`Client ${client} added`);
+        console.log(`Client ${client.name}, ${client.age} added`);
       }
     }
   }
