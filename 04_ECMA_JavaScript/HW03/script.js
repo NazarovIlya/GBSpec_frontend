@@ -1,7 +1,10 @@
+import { Employee } from "./models/Employee.js";
 
 
 // Задача №1
 console.log('Задача № 1\n');
+const employee = new Employee('John Smith');
+console.log(employee.displayInfo());
 
 
 console.log('\n');
