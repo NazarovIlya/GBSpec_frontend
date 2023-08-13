@@ -30,7 +30,7 @@ console.log(product_2);
 order.addProduct(product_2);
 console.log(order);
 
-console.log(order.getTotalPrice());
+console.log(`Общая сумма заказа ${order.orderNumber} состовляет ${order.getTotalPrice()} тугриков.  `);
 
 console.log('\n');
 
