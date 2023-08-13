@@ -2,6 +2,7 @@ import { Employee } from "./models/Employee.js";
 import { Manager } from "./models/Manager.js";
 import { Order } from "./models/Order.js";
 import { Product } from "./models/Pruduct.js";
+import { Student } from "./models/Student.js";
 
 
 // Задача №1
@@ -37,5 +38,11 @@ console.log('\n');
 // Задача №3
 console.log('Задача № 3\n');
 
+const student = new Student();
+console.log(student);
+student.setName('Питер Паркер');
+student.setAge(20);
+student.setAverageGrade(85);
+student.displayInfo();
 
 console.log('\n');

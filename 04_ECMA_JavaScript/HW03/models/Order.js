@@ -7,5 +7,6 @@ export class Order{
 
   addProduct = (product) => this.products.push(product);
   
-  getTotalPrice = () => this.products.reduce((acc, element) => acc += element.price, 0)
+  getTotalPrice = () => this.products.reduce((acc, element) => acc += element.price, 0);
+  
 }
