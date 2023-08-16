@@ -16,7 +16,10 @@ a{
   font-size: 16px;
   background-color: antiquewhite;
   color: darkslateblue;
-  min-height: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 50px;
 }
 
 .title{
@@ -29,11 +32,14 @@ a{
   align-items: center;
 }
 
+.heading{
+  text-align: center;
+}
+
 .users{
-  margin-top: 50px;
   padding: 0 32px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
   gap: 3%;
   align-items: center;
 }
@@ -42,7 +48,7 @@ a{
   padding: 16px 16px;
   min-width: auto 250px;
   max-width:  360px;
-  min-height: auto 290px;
+  min-height: 290px;
   background-color: #ccc;
   color: blueviolet;
   display: flex;
@@ -77,4 +83,20 @@ a{
 .user img {
   min-height: auto 220px;
   align-items: center;
+}
+
+.heading:nth-child(4){
+  margin-top: 30px;
+}
+
+.dogs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.dogs img{
+  width: 680px;
+  transition: all 0.5;
 }

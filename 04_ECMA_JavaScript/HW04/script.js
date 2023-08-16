@@ -1,13 +1,10 @@
 // Задача №1
 
-const url = 'https://jsonplaceholder.typicode.com/users';
-const wrap = document.querySelector('.users');
+const urlUsers = 'https://jsonplaceholder.typicode.com/users';
+const wrapUsers = document.querySelector('.users');
 
-const data = await getData(url);
-console.log(data);
-
-localStorage.clear();
-
+const dataUsers = await getData(urlUsers);
+console.log(dataUsers);
 
 
 async function getData(url) {
@@ -16,8 +13,8 @@ async function getData(url) {
   return result;
 }
 
-const show = (element) => {
-  wrap.insertAdjacentHTML("beforeend",
+const showUser = (element) => {
+  wrapUsers.insertAdjacentHTML("beforeend",
   `<figure class="user" id="${element.id}">
   <img src="./img/no_photo.jpg" alt="photo">
   <a href='#'><h2 class="user__name" id="${element.id}">${element.name}</a></h2></a>
@@ -32,10 +29,21 @@ const deleteButton = (button) => button.addEventListener('click', () => {
   document.getElementById(id).remove();
 })
 
-data.forEach(element => show(element));
+dataUsers.forEach(element => showUser(element));
 
 const arrayButtons = document.querySelectorAll('.button__del');
 arrayButtons.forEach(element => deleteButton(element));
 
 
 // Задача №2
+
+const COUNT_DOGS = 10;
+const urlRandomDog = 'https://dog.ceo/api/breeds/image/random';
+
+const wrapDogs = document.querySelector('.dogs');
+await showDog(urlRandomDog);
+
+setInterval(async () => {
+  const conreteDog = await getData(urlRandomDog);
+  wrapDogs.innerHTML = `<img src='${conreteDog.message}' alt='dog photo'>`;
+}, 3000);
