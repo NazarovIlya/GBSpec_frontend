@@ -41,7 +41,6 @@ const COUNT_DOGS = 10;
 const urlRandomDog = 'https://dog.ceo/api/breeds/image/random';
 
 const wrapDogs = document.querySelector('.dogs');
-await showDog(urlRandomDog);
 
 setInterval(async () => {
   const conreteDog = await getData(urlRandomDog);
