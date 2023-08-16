@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .center-row{
 }
 
@@ -30,6 +35,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
   gap: 3%;
+  align-items: center;
 }
 
 .user{
@@ -42,6 +48,30 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.user button {
+  padding: 1rem 2rem;
+  background-color: #e8f9;
+  height: 50px;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 600;
+  color: #f10D7F;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.user button:hover{
+  color: #fff;
+  background-color: red;
+  transform: scale(90%, 90%);
 }
 
 .user img {

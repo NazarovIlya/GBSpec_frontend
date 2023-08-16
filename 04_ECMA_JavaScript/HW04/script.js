@@ -20,7 +20,7 @@ const show = (element) => {
   wrap.insertAdjacentHTML("beforeend",
   `<figure class="user" id="${element.id}">
   <img src="./img/no_photo.jpg" alt="photo">
-  <h2 class="user__name" id="${element.id}">${element.name}</h2>
+  <a href='#'><h2 class="user__name" id="${element.id}">${element.name}</a></h2></a>
   <button class="button__del">Удалить</button>
 </figure>`);
   localStorage.setItem(element.id, element);
