@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div class="conteiner center-row">
+      <h1 class="title">Домашняя работа №1</h1>
+      <div id="app" class="reverse">
+        <h2 class="heading">Task #1: 'Reverse'</h2>
+        <button class="btn" type="button" v-on:click="reverseWord">{{ message }}</button>
+      </div>
+
+      <div class="list">
+        <h2 class="heading">Task #2: 'TODO List'</h2>
+        <button v-on:click="addItem" class="btn">Добавить элемент</button>
+        <ul class="list-items">
+          <li v-for="(item, index) in items">
+            {{item}}
+            <button class="item-btn" v-on:click='removeItem(index)'>Удалить</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+<!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        id: 0,
+        message: 'Перевернуть.',
+        items: []
+      },
+
+      methods: {
+        reverseWord(){
+          this.message = this.message.split('').reverse().join('');
+        },
+
+        addItem(){
+          this.id = this.items.length;
+          
+          this.items.push(`Новый элемент списка ${++this.id}`);
+        },
+        removeItem(index){
+          this.items = this.items.filter((v, i) => i !== index)
+        }
+      }
+    })
+  </script>
+</body>
+</html>
