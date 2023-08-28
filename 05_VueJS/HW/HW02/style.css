@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.content{
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sort button{
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: pink;
+  border: none;
+}
+
+.product__content{
+  width: auto;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+}

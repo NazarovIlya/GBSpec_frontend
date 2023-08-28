@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Vue task #2</title>
+</head>
+<body>
+
+  <div id="app">
+    <div class="content">
+      <div class="sort">
+        <h3>Сортировка</h3><br>
+        <button @click="sort(false)">Дороже</button>
+        <button @click="sort(true)">Дешевле</button>
+      </div>
+        <figure class="product" v-for="item in products" :key="item.id">
+          <img class="product-img" :src="item.photo" alt="photo">
+          <div class="product__content">
+            <caption>
+              <h3>{{item.name}}</h3>
+            </caption>
+            <strong>{{item.price}}</strong>
+          </div>
+        </figure>
+    </div>
+  </div>
+
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
