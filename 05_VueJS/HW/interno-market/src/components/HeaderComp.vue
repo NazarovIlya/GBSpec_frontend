@@ -2,7 +2,7 @@
 <template>
   <div class="header">
     <logo-comp/>
-    <navigation-bar/>
+    <navigation-bar type="header"/>
   </div>
 </template>
 
@@ -28,23 +28,5 @@ export default ({
   justify-content: space-between;
   background-color: #ccc;
 
-  //  &__logo{
-  //   display: flex;
-  //   align-items: center;
-  //   flex-direction: row;
-
-  //   & svg{
-  //     margin-right: 10px;
-  //   }
-  //  }
-
-  //  &__title{
-  //   color: #292F36;
-  //   font-family: DM Serif Display;
-  //   font-size: 40px;
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   line-height: 125%;
-  //  }
   }
 </style>

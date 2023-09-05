@@ -1,7 +1,7 @@
 <!-- eslint-disable max-len -->
 <template>
-  <nav class="navbar">
-    <a class="navbar__link" v-for="item in links" :key="item.id" :to="item.path">{{ item.title }}</a>
+  <nav :class="styles">
+    <router-link class="navbar__link" v-for="item in links" :key="item.id" :to=item.path>{{ item.title }}</router-link>
   </nav>
 </template>
 
@@ -9,6 +9,18 @@
 
 export default ({
   name: 'NavigationBar',
+  props: ['type'],
+  computed: {
+    styles() {
+      if (this.type === 'header') {
+        return ['navbar_header'];
+      }
+      if (this.type === 'footer') {
+        return ['navbar_footer'];
+      }
+      return 'style-class-none';
+    },
+  },
   data() {
     return {
       links: [
@@ -36,8 +48,17 @@ export default ({
 
 <style lang="scss" scoped>
 .navbar{
+
+  &_header{
   display: flex;
   gap: 20px;
+  }
+
+  &_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; //!TODO
+  }
 
   &__link {
   color: #292F36;

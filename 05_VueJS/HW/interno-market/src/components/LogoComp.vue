@@ -27,7 +27,7 @@ export default ({
 
     &__title{
       color: #292F36;
-      font-family: DM Serif Display;
+      font-family: 'DM Serif Display';
       font-size: 40px;
       font-style: normal;
       font-weight: 400;
