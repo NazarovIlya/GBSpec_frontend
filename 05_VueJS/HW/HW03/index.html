@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Home work #3</title>
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <header-comp/>
+    </header>
+  <div class="body-content">
+    <div class="blog-details-img"></div>
+      <div class="blog-details-main-container">
+        <div class="blog-details-data">
+          <div><blog-list :tag="selectedTag" /></div>
+          <tags @tag-selected="setTag" />
+        </div>
+      </div>
+  </div>
+  <footer class="footer">
+
+  </footer>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./js/headerComp.js"></script>
+    <script src="js/blog-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header, .body-content, .footer{
+  padding: 0 18.75%;
+  background-color: #FFF;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ccc;
+}
+
+.header__logo{
+  display: flex;
+  flex-direction: row;
+  padding:  44px 0;
+}
+
+.header__logo svg{
+  margin-right: 10px;
+}
+
+.navbar{
+  display: flex;
+  gap: 25px;
+}
+
+.header__title{
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.link{
+  color: #292F36;
+  text-align: center;
+  font-family: 'Jost';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  transition: all .15s;;
+}
+
+.link:hover{
+  color: blueviolet;
+}
+
+.body-content{
+
+}
+
+.blog-details-main-container{
+
+}
+
+.blog-details-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog-details-posts {
+    width: 800px;
+}
+
+.blog-details-tags {
+    width: 345px;
+}
+
+.header{
+  /* background-color: #ccc; */
+}
+
+.footer{
+  margin-bottom: 141px;
+}
