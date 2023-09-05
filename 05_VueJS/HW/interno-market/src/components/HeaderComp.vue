@@ -42,8 +42,9 @@
    &__navbar{
     display: flex;
     gap: 25px;
+   }
 
-   &__link {
+    &__link {
       color: #292F36;
       text-align: center;
       font-family: 'Jost';
@@ -64,6 +65,5 @@
       color: #42b983;
     }
   }
-   }
   }
 </style>

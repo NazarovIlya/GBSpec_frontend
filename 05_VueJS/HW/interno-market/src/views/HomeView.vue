@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <HeaderComp/>
+    <h1>Здесь будет контент!</h1>
   </div>
 </template>
 

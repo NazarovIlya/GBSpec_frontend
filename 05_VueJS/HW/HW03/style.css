@@ -52,7 +52,7 @@ a{
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  transition: all .15s;;
+  transition: all .15s;
 }
 
 .link:hover{
