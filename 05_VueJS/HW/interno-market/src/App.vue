@@ -20,22 +20,7 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &:not(:last-child)::after{
-      content: '|';
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-    }
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+a{
+  text-decoration: none;
 }
 </style>

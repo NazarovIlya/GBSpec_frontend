@@ -1,0 +1,57 @@
+<!-- eslint-disable max-len -->
+<template>
+  <nav class="navbar">
+    <a class="navbar__link" v-for="item in links" :key="item.id" :to="item.path">{{ item.title }}</a>
+  </nav>
+</template>
+
+<script>
+
+export default ({
+  name: 'NavigationBar',
+  data() {
+    return {
+      links: [
+        {
+          title: 'Home',
+          path: '/',
+        },
+        {
+          title: 'Project',
+          path: '/project',
+        },
+        {
+          title: 'Blog',
+          path: '/blog',
+        },
+        {
+          title: 'Abuot Vue 3',
+          path: '/about',
+        },
+      ],
+    };
+  },
+});
+</script>
+
+<style lang="scss" scoped>
+.navbar{
+  display: flex;
+  gap: 20px;
+
+  &__link {
+  color: #292F36;
+  text-align: center;
+  font-family: 'Jost';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  transition: all .15s;
+&.router-link-exact-active {
+    color: #42b983;
+  }
+ }
+}
+
+</style>
