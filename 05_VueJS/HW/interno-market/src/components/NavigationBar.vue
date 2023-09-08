@@ -9,7 +9,9 @@
 
 export default ({
   name: 'NavigationBar',
-  props: ['type'],
+  props: {
+    type: String,
+  },
   computed: {
     styles() {
       if (this.type === 'header') {
