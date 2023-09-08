@@ -3,14 +3,27 @@
   <footer class="footer">
     <div class="footer__left">
       <logo-comp/>
-      <p class='footer__text'>It is a long established fact that a reader will be distracted lookings. </p>
+      <p class='footer__text'>
+        It is a long established fact that a reader will be distracted lookings.
+      </p>
     </div>
     <div class="footer__center">
-      <h3>Pages</h3>
+      <h3 class="footer__title">Pages</h3>
       <navigation-bar type="footer"/>
     </div>
     <div class="footer__right">
-
+      <div>
+        <h3 class="footer__title">Contact</h3>
+        <p class="footer__text">
+          55 East Birchwood Ave. Brooklyn, New York 11201
+        </p>
+        <p class="footer__text footer__text_email">
+          contact@interno.com
+        </p>
+        <p class="footer__text">
+           +7 (123) 456 - 7890
+        </p>
+      </div>
     </div>
   </footer>
 </template>
@@ -32,14 +45,27 @@ export default {
 <style lang="scss" scoped>
   .footer{
   padding: 0px 12.76%;
+  // height: auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content:stretch;
+  align-items: start;
+  justify-content: stretch;
   background-color: #ccc;
   gap: 101px;
 
+  &__title{
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 31.25px */
+  }
+
   &__left{
+    display: flex;
+    flex-direction: column;
+    // justify-content: start;
     width: 393px;
   }
 
@@ -52,6 +78,24 @@ export default {
     line-height: 150%; /* 33px */
     letter-spacing: 0.22px;
     text-align: left;
+
+    &_email{
+      line-height: 300%;
+    }
+  }
+
+  &__center{
+    width: 238px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  &__right{
+    width: 258px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
   }
 }
 </style>
