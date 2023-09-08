@@ -1,13 +1,17 @@
 <template>
-  <header-comp/>
-  <router-view/>
-  <footer-comp/>
+  <div>
+    <header-comp/>
+    <main>
+      <router-view/>
+    </main>
+    <footer-comp/>
+  </div>
+
 </template>
 
 <script>
-
-import HeaderComp from '@/components/HeaderComp.vue';
-import FooterComp from '@/components/FooterComp.vue';
+import FooterComp from './components/FooterComp.vue';
+import HeaderComp from './components/HeaderComp.vue';
 
 export default ({
   name: 'App',

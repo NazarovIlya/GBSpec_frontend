@@ -28,27 +28,26 @@
   </footer>
 </template>
 
-<script>
+<script lang="ts">
 import LogoComp from './LogoComp.vue';
 import NavigationBar from './NavigationBar.vue';
 
-export default {
+export default ({
   name: 'FooterComp',
   components: {
     NavigationBar,
     LogoComp,
   },
-};
+});
 
 </script>
 
 <style lang="scss" scoped>
   .footer{
   padding: 0px 12.76%;
-  // height: auto;
+  height: auto;
   display: flex;
   flex-direction: row;
-  align-items: start;
   justify-content: stretch;
   background-color: #ccc;
   gap: 101px;
@@ -65,7 +64,6 @@ export default {
   &__left{
     display: flex;
     flex-direction: column;
-    // justify-content: start;
     width: 393px;
   }
 
@@ -93,9 +91,9 @@ export default {
 
   &__right{
     width: 258px;
-    justify-content: start;
     align-items: center;
     margin-top: 20px;
+    text-align: left;
   }
 }
 </style>
