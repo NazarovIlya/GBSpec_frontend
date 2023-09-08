@@ -1,9 +1,9 @@
 <!-- eslint-disable max-len -->
 <template>
-  <div class="header">
+  <header class="header">
     <logo-comp/>
     <navigation-bar type="header"/>
-  </div>
+  </header>
 </template>
 
 <script>

@@ -39,7 +39,7 @@ export default ({
           path: '/blog',
         },
         {
-          title: 'Abuot Vue 3',
+          title: 'About Vue 3',
           path: '/about',
         },
       ],
