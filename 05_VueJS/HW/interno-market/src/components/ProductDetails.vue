@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import Product from '@/components/Product';
+import Product from '@/models/Product';
 
 export default ({
   name: 'ProductDetails',
