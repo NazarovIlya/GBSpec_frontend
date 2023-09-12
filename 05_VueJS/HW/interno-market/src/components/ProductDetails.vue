@@ -8,13 +8,14 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue';
 import Product from '@/models/Product';
 
-export default ({
+export default defineComponent({
   name: 'ProductDetails',
   data() {
     return {
-      product: new Product('Продукт_1', '99', true),
+      product: new Product('Продукт_1', 99, true),
     };
   },
   computed: {
