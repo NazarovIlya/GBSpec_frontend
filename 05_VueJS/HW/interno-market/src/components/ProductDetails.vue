@@ -7,24 +7,21 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Product from '@/components/Product';
 
 export default ({
   name: 'ProductDetails',
   data() {
     return {
-      product: {
-        name: 'Product_1',
-        price: 99,
-        available: true,
-      },
+      product: new Product('Продукт_1', '99', true),
     };
   },
   computed: {
-    formattedPrice() {
+    formattedPrice(): string {
       return `\u0024 ${this.product.price.toString()}`;
     },
-    available() {
+    available(): string {
       return this.product.available ? 'Available' : 'Out of stock';
     },
   },
