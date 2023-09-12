@@ -1,12 +1,9 @@
 <template>
-  <div>
     <header-comp/>
-    <main>
+    <main class="main">
       <router-view/>
     </main>
     <footer-comp/>
-  </div>
-
 </template>
 
 <script>
@@ -38,5 +35,10 @@ export default ({
 
 a{
   text-decoration: none;
+}
+
+.main{
+  height: 100vh;
+  background-color: #fff;
 }
 </style>
