@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Добавить отзыв</title>
+    <style>
+      .center {
+        /* padding-right: calc(50% - 600px); */
+        padding-left: calc(50% - 300px);
+      }
+      .feedback {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 80px;
+      }
+      .changePage {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- страница добавления отзывов -->
+    <div class="center">
+      <h1>Добавить отзыв</h1>
+
+      <input class="name_product" type="text" placeholder="Название продукта" />
+      <div>
+        <textarea placeholder="Текст отзыва" class="feedback"></textarea>
+      </div>
+      <p class="error__message"></p>
+
+      <button class="btn">Сохранить отзыв</button>
+
+      <div>
+        <button class="changePage">Перейти на страницу товаров</button>
+      </div>
+    </div>
+    <!--  -->
+    <script src="repo.js"></script>
+    <script src="addFeedback.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница товаров</title>
+    <style>
+      .center {
+        /* padding-right: calc(50% - 600px); */
+        padding-left: calc(50% - 300px);
+      }
+      .feedbackList {
+        /* display: block; */
+      }
+      .changePage {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Страница товаров, с возможностью развернуть и свернуть отзывы -->
+    <div class="center">
+      <h1>Страница товаров</h1>
+
+      <div class="content">
+        <!-- в этот div помещается иформация из LocalStorage -->
+      </div>
+
+      <div>
+        <button class="changePage">Перейти на страницу отзывов</button>
+      </div>
+    </div>
+
+    <script src="repo.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>
